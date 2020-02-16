@@ -1,0 +1,66 @@
+import java.awt.GridLayout;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class Temp extends JFrame
+{
+	//all objects 
+	private JLabel heading;
+	private JLabel degrees;
+	private JTextField degreesTF;
+	//private JLabel Kelvin;
+	//private JTextField KelvinTF;
+	
+	private JButton calculate;
+	
+	private JLabel answer;
+	private JLabel display;
+	
+	public Temp()
+	{
+		super("Tempreture converter ");
+		layout = new GridLayout(5,2);
+		setLayout(layout);
+		
+		degreeL = new JLabel("Enter tempreture in degrees: ");
+		//no value 
+		degreeTF = new JTextField("");
+	
+		calculate = new JButton("CONVERT");
+		
+		answer = new JLabel("Your Answer in kelvin is: ");
+		displayL = new JLabel("");
+		
+		add(degreeL);
+		add(degreeTF);
+		
+		add(calculate);
+		add(answer);
+		
+		add(displayL);
+		
+	}
+	
+	
+
+	
+	private class calculateHandler implements ActionListener
+	{
+	
+		public calculateHandler(ActionEvent  e)
+		double weight = Double.parseDouble(weightTF.getText)
+	
+		
+		
+	}
+
+	
+	public static void main(String[] args)
+	{
+		
+		Temp convert = new Temp();
+		convert.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		convert.setSize(500,250);
+		Temp.setVisible(true);
+	}
+}
